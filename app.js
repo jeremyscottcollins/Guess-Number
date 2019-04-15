@@ -77,7 +77,7 @@ guessBtn.addEventListener('click', function() {
 // Game over
 function gameOver(won, msg) {
   let color;
-  won === true ? color === 'green' : color === 'red';
+  won === true ? (color = 'green') : (color = 'red');
 
   // Disable input
   guessInput.disabled = true;
